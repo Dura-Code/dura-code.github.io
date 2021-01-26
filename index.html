@@ -5,6 +5,7 @@
     <title>Dura Code - Consultancy Data Analytics Data Visualization</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -22,57 +23,49 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
       <div class='container'>
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Dura Code</a>      
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About us</a>
+            </li>
 
-      <!-- Brand -->
-      <a class="navbar-brand" href="#">Dura Code</a>      
-    
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">About us</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </nav>
 
     <!-- Header -->
     <div class='homeheader'>
       <div class='container'> 
         <div class='row'>
-          <div class='col-lg align-self-end' id='headerleft'>
-            <div class='row'>
-              <div class='col'>
-                <div class='vertical-line'></div>
-                <h1> Data driven solutions</h1>
-                <p>Our mission is to solve problems with the powerfull tools of datadriven algorithms and simulations.</p>
-              </div>
+          <div class='col-lg align-self-end'>
+            <div id='headerleft'>
+              <h1> Data driven solutions</h1>
+              <p>Our mission is to solve problems with the powerfull tools of datadriven algorithms and simulations.</p>
             </div>
-
-            <div class='row'>
-              <div class='col'>
-                <a href="#aboutus">
-                  <div class='button1'>
-                    <img class='arrow-down' src="static/images/angle-right.svg">
-                  </div>
-                </a>
+            <a href="#aboutus">
+              <div class='button1'>
+                <img class='arrow-down' src="static/images/angle-right.svg">
               </div>
-            </div>
+            </a>
+            <div class='vertical-spacer'></div>          
           </div>
 
           <div class='col-lg my-auto' id='headerright'>
             <a href='#visualization'>
-              <div class="row headerbox">                  
+              <div class="row headerbox" id="header-visualization">                  
                 <div class='col-2 my-auto'>
                   <div class='headericon'>
                     <img src="static/images/infographic.png">
@@ -91,7 +84,7 @@
             </a>  
 
             <a href='#consultancy'>
-              <div class="row headerbox">
+              <div class="row headerbox" id="header-consultancy">
                 <div class='col-2 my-auto'>
                   <div class='headericon'>
                     <img src="static/images/Consultancy.png">
@@ -110,7 +103,7 @@
             </a>
 
             <a href='#analytics'>
-              <div class="row headerbox">
+              <div class="row headerbox" id="header-analytics">
                 <div class='col-2 my-auto'>
                   <div class='headericon'>
                     <img src="static/images/dashboard.png">
@@ -127,81 +120,163 @@
                 </div>
               </div>
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- About us -->
-    <div id='aboutus' class='cart'>    
-      <div  class='container'>
-        <div class='row'>
-          <div class='col text-right'>
-            <div class='vertical-line'></div>
-            <h1>Our team</h1>
-          </div>
-        </div>
-        <div class='vertical-spacer'></div>   
-        <div class='vertical-spacer'></div>   
-        <div class='vertical-spacer'></div>   
-        <div class='vertical-spacer'></div>   
-        <div class='vertical-spacer'></div>   
-        <div class='row justify-content-between'>
-          <div class='col-md-3 text-center box'>
-              <div class='foto'></div>
-              <div class='vertical-spacer'></div>   
-              <div class='text-right'><h3>Founder</h3></div> 
-              <div class='text-left'>
-                <h2>KOEN SMALLEGANGE</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Nunc ac mi sollicitudin, malesuada mauris mattis, placerat sem. 
-                  Vivamus venenatis ligula at quam elementum, sed fermentum nulla bibendum. </p>
-              </div>          
-          </div>
-          <div class='col-md-3 text-center box'>
-              <div class='foto'></div>
-              <div class='vertical-spacer'></div>   
-              <div class='text-right'><h3>Founder</h3></div> 
-              <div class='text-left'>
-                <h2>FREEK TEMMING</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Nunc ac mi sollicitudin, malesuada mauris mattis, placerat sem. 
-                  Vivamus venenatis ligula at quam elementum, sed fermentum nulla bibendum. </p>
-              </div>
-          </div>
-          <div class='col-md-3 text-center box'>
-            <div class='foto'></div>
-            <div class='vertical-spacer'></div>   
-            <div class='text-right'><h3>Founder</h3></div> 
-            <div class='text-left'>
-              <h2>SIMON VAN EEDEN</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nunc ac mi sollicitudin, malesuada mauris mattis, placerat sem. 
-                Vivamus venenatis ligula at quam elementum, sed fermentum nulla bibendum. </p>
+            <div class='text-right'>
+              <div class="vertical-spacer"></div>
+              <div class="vertical-spacer"></div>
+              <div class="vertical-spacer"></div>
+              <div class="vertical-spacer"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Visualization -->
-    <div id='visualization' class='cart'>
-      <h1>Visualization</h1>
+    <!-- About us -->
+    <div  class='cart'>    
+      <div  class='container'>
+        <div class='row'>
+          <div class='col text-right'>  
+            <div class="row">
+              <div class="col">
+              </div>
+              <div class="col-auto my-auto">
+                <h1 class="title-box">About us</h1>
+                <h3>OUR TEAM</h3>
+              </div>
+              <div class="col-auto">
+                <div class='vertical-line' id='aboutus'></div>
+              </div>
+            </div>                        
+          </div>
+        </div> 
+        <div class='row box mx-0 px-0'>
+          <div class='col-md px-5 text-center box'>
+              <!-- <div class='foto'></div> -->
+              <div class='vertical-spacer'></div>   
+              <div class='text-left'>
+                <h2>Koen</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nunc ac mi sollicitudin, malesuada mauris mattis, placerat sem. 
+                  Vivamus venenatis ligula at quam elementum, sed fermentum nulla bibendum. </p>
+              </div>          
+          </div>
+          <div class='col-md px-5 text-center box'>
+              <!-- <div class='foto'></div> -->
+              <div class='vertical-spacer'></div>   
+              <div class='text-left'>
+                <h2>Freek</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nunc ac mi sollicitudin, malesuada mauris mattis, placerat sem. 
+                  Vivamus venenatis ligula at quam elementum, sed fermentum nulla bibendum. </p>
+              </div>
+          </div>
+          <div class='col-md px-5 text-center box'>
+            <!-- <div class='foto'></div> -->
+            <div class='vertical-spacer'></div>   
+            <div class='text-left'>
+              <h2>Simon</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc ac mi sollicitudin, malesuada mauris mattis, placerat sem. 
+                Vivamus venenatis ligula at quam elementum, sed fermentum nulla bibendum. </p>
+            </div>
+          </div>
+        </div>
+        <div class=row>
+          <div class="col">
+            <div class='vertical-spacer'></div>
+            <div class='vertical-spacer'></div>
+            <div class='vertical-spacer'></div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
-    <!-- Cnsultancy -->
-    <div id='consultancy' class='cart'>
-      <h1>Consultancy</h1>
+    <!-- Visualization -->
+    <div id='visualization' class='cart'>
+      <div class="big-block">
+        <div class="container">  
+          <div class="row">
+            <div class="col">
+              <h2>Graphs</h2>
+              <p>Graphs in matplotlib</p>
+            </div>
+            <div class="col">
+              <h2>Animations</h2>
+              <p>Making animations</p>
+            </div>
+          </div>
+        </div> 
+      </div> 
     </div>
 
     <!-- Analytics -->
     <div id='analytics' class='cart'>
-      <h1>Data analyse</h1>
+      <div class="big-block">
+        <div class="container">  
+          <div class="row">
+            <div class="col">
+              <h2>Regression models</h2>
+              <p>Advice on improving efficiency</p>
+            </div>
+            <div class="col">
+              <h2>AI</h2>
+              <p>Solutions from algorithms</p>
+            </div>
+          </div>
+        </div> 
+      </div> 
     </div>
+
+    <!-- Consultancy -->
+    <div id='consultancy' class='cart'>
+      <div class="big-block">
+        <div class="container">  
+          <div class="row">
+            <div class="col">
+              <h2>Data strategy</h2>
+              <p>Advice on improving efficiency</p>
+            </div>
+            <div class="col">
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </div>
+
+    <div class='vertical-spacer'></div>
+    <div class='vertical-spacer'></div>
+    <div class='vertical-spacer'></div>
 
     <!-- Contact -->
     <div id='contact' class='cart'>
-        <h1>Contact</h1>
+      <div class="container">    
+        <div class='row'>
+          <div class='col text-left'>  
+            <div class='row'>
+              <div class="col-auto">
+                <div class='vertical-line' id='aboutus'></div>   
+              </div>
+              <div class="col-auto my-auto">
+                <h1 class="title-box">Contact</h1>
+                <h3>REACH US</h3>
+              </div>
+              <div class="col"></div>   
+            </div>
+          </div>
+          <div class="col text-left">
+            <div class="box">
+              <p>
+                Email:
+              </p>
+              <p>
+                Telefoon
+              </p>
+            </div>
+          </div>
+        </div> 
+      </div>       
     </div>
   </body>
 </html>
