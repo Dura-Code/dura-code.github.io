@@ -17,14 +17,14 @@
   <body>
     <!-- Scroll up button -->
     <button id='scroll-up-button'>
-      <img class='arrow-up' src="static/images/angle-right.svg">
+      <img class='arrow-up' src="static/images/angle-right_1.svg">
     </button>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
       <div class='container'>
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Dura Code</a>      
+        <a class="navbar-brand" href="#"><img class="logo" src="static/images/logo.png">Dura Code</a>      
       
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -37,7 +37,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#aboutus">About us</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Portfolio</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
@@ -50,90 +52,88 @@
     <div class='homeheader'>
       <div class='container'> 
         <div class='row'>
-          <div class='col-lg align-self-end'>
+          <div class='col-lg my-auto mx-0'>
             <div id='headerleft'>
               <h1> Data driven solutions</h1>
               <p>Our mission is to solve problems with the powerfull tools of datadriven algorithms and simulations.</p>
-            </div>
-            <a href="#aboutus">
-              <div class='button1'>
-                <img class='arrow-down' src="static/images/angle-right.svg">
-              </div>
-            </a>
-            <div class='vertical-spacer'></div>          
+              <a href="#aboutus">
+                <div class='button1'>
+                  <img class='arrow-down' src="static/images/angle-right_1.svg">
+                </div>
+              </a>
+            </div>        
           </div>
 
-          <div class='col-lg my-auto' id='headerright'>
+          <div class='col-lg' id='headerright'>
+            <div class="vertical-spacer"></div>
+            <div class="vertical-spacer"></div>
             <a href='#visualization'>
               <div class="row headerbox" id="header-visualization">                  
-                <div class='col-2 my-auto'>
+                <div class='col-auto my-auto px-0 pr-lg-2'>
                   <div class='headericon'>
                     <img src="static/images/infographic.png">
                   </div>
                 </div>
 
-                <div class='col'>                             
+                <div class='col my-auto'>                             
                   <h1>Visualization</h1>
                   <p>Graphical representation of complex datasets</p>
                 </div>  
 
                 <div class='col-1 my-auto mover'>
-                  <img class='arrow' src="static/images/angle-right.svg">
+                  <img class='arrow' src="static/images/angle-right_1.svg">
                 </div>
               </div>
             </a>  
 
             <a href='#consultancy'>
               <div class="row headerbox" id="header-consultancy">
-                <div class='col-2 my-auto'>
+                <div class='col-auto my-auto px-0 pr-lg-2'>
                   <div class='headericon'>
                     <img src="static/images/Consultancy.png">
                   </div>
                 </div>
 
-                <div class='col'>
+                <div class='col my-auto'>
                   <h1>Consultancy</h1>
                   <p>Our view on improving your technical data strategy</p>
                 </div>
 
                 <div class='col-1 my-auto mover'>
-                  <img class='arrow' src="static/images/angle-right.svg">
+                  <img class='arrow' src="static/images/angle-right_1.svg">
                 </div>
               </div>
             </a>
 
             <a href='#analytics'>
               <div class="row headerbox" id="header-analytics">
-                <div class='col-2 my-auto'>
+                <div class='col-auto my-auto px-0 pr-lg-2'>
                   <div class='headericon'>
                     <img src="static/images/dashboard.png">
                   </div>
                 </div>
 
-                <div class='col'>
+                <div class='col my-auto'>
                   <h1>Analytics</h1>
                   <p>An analytical approach on complex problems using heuristics and AI</p> 
                 </div>
 
                 <div class='col-1 my-auto mover'>
-                  <img class='arrow' src="static/images/angle-right.svg">
+                  <img class='arrow' src="static/images/angle-right_1.svg">
                 </div>
               </div>
             </a>
 
-            <div class='text-right'>
-              <div class="vertical-spacer"></div>
-              <div class="vertical-spacer"></div>
-              <div class="vertical-spacer"></div>
-              <div class="vertical-spacer"></div>
-            </div>
+            <div class="vertical-spacer"></div>
+            <div class="vertical-spacer"></div>
           </div>
         </div>
+        <div class="vertical-spacer"></div>
       </div>
     </div>
 
     <!-- About us -->
-    <div  class='cart'>    
+    <div  class='cart' id='aboutus'>    
       <div  class='container'>
         <div class='row'>
           <div class='col text-right'>  
@@ -145,15 +145,14 @@
                 <h3>OUR TEAM</h3>
               </div>
               <div class="col-auto">
-                <div class='vertical-line' id='aboutus'></div>
+                <div class='vertical-line'></div>
               </div>
             </div>                        
           </div>
         </div> 
-        <div class='row box mx-0 px-0'>
-          <div class='col-md px-5 text-center box'>
+        <div class='row box mx-0'>
+          <div class='col-lg p-sm-3 text-center'>
               <!-- <div class='foto'></div> -->
-              <div class='vertical-spacer'></div>   
               <div class='text-left'>
                 <h2>Koen</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -161,9 +160,8 @@
                   Vivamus venenatis ligula at quam elementum, sed fermentum nulla bibendum. </p>
               </div>          
           </div>
-          <div class='col-md px-5 text-center box'>
-              <!-- <div class='foto'></div> -->
-              <div class='vertical-spacer'></div>   
+          <div class='col-lg p-sm-3 text-center'>
+              <!-- <div class='foto'></div> -->  
               <div class='text-left'>
                 <h2>Freek</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -171,9 +169,8 @@
                   Vivamus venenatis ligula at quam elementum, sed fermentum nulla bibendum. </p>
               </div>
           </div>
-          <div class='col-md px-5 text-center box'>
-            <!-- <div class='foto'></div> -->
-            <div class='vertical-spacer'></div>   
+          <div class='col-lg p-sm-3 text-center'>
+            <!-- <div class='foto'></div> -->  
             <div class='text-left'>
               <h2>Simon</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -198,11 +195,11 @@
       <div class="big-block">
         <div class="container">  
           <div class="row">
-            <div class="col">
+            <div class="col-lg">
               <h2>Graphs</h2>
               <p>Graphs in matplotlib</p>
             </div>
-            <div class="col">
+            <div class="col-lg">
               <h2>Animations</h2>
               <p>Making animations</p>
             </div>
@@ -216,11 +213,11 @@
       <div class="big-block">
         <div class="container">  
           <div class="row">
-            <div class="col">
+            <div class="col-lg">
               <h2>Regression models</h2>
               <p>Advice on improving efficiency</p>
             </div>
-            <div class="col">
+            <div class="col-lg">
               <h2>AI</h2>
               <p>Solutions from algorithms</p>
             </div>
@@ -234,11 +231,11 @@
       <div class="big-block">
         <div class="container">  
           <div class="row">
-            <div class="col">
+            <div class="col-lg">
               <h2>Data strategy</h2>
               <p>Advice on improving efficiency</p>
             </div>
-            <div class="col">
+            <div class="col-lg">
             </div>
           </div>
         </div> 
@@ -253,7 +250,7 @@
     <div id='contact' class='cart'>
       <div class="container">    
         <div class='row'>
-          <div class='col text-left'>  
+          <div class='col-lg text-left'>  
             <div class='row'>
               <div class="col-auto">
                 <div class='vertical-line' id='aboutus'></div>   
@@ -265,8 +262,10 @@
               <div class="col"></div>   
             </div>
           </div>
-          <div class="col text-left">
-            <div class="box">
+        </div> 
+        <div class="row">
+          <div class="col-lg text-left">
+            <div class="box-left">
               <p>
                 Email:
               </p>
@@ -275,7 +274,7 @@
               </p>
             </div>
           </div>
-        </div> 
+        </div>
       </div>       
     </div>
   </body>
